@@ -96,6 +96,11 @@ h2 {
 }
 
 //NAV BAR
+body > nav {
+  position: relative;
+  z-index: 12;
+}
+
 #menuToggle {
   display: block;
   position: absolute;
@@ -132,8 +137,8 @@ h2 {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 4px;
+  left: 16px;
   font-size: 50px;
 
   cursor: pointer;
@@ -245,8 +250,9 @@ h2 {
   }
 }
 
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked ~ ul#menu {
   transform: none;
+  display: block;
 }
 
 //VIDEO
@@ -318,25 +324,25 @@ h2 {
 }
 
 .yellow-block {
+  a {
+    max-width: 85%;
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+  }
   @media (max-width: 767px) {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-
-.yellow-block a {
-  max-width: 85%;
-  display: block;
-  margin: 0 auto;
-  z-index: 10;
-  position: relative;
-}
 .black a {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   z-index: 10;
   position: relative;
   background-color: black;
+  width: fit-content;
 }
 
 .black {

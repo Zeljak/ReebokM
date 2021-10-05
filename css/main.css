@@ -11537,6 +11537,11 @@ h2 {
   }
 }
 
+body > nav {
+  position: relative;
+  z-index: 12;
+}
+
 #menuToggle {
   display: block;
   position: absolute;
@@ -11574,8 +11579,8 @@ h2 {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 4px;
+  left: 16px;
   font-size: 50px;
   cursor: pointer;
   opacity: 0;
@@ -11695,9 +11700,10 @@ h2 {
   }
 }
 
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked ~ ul#menu {
   -webkit-transform: none;
           transform: none;
+  display: block;
 }
 
 .videoBlock {
@@ -11777,13 +11783,6 @@ h2 {
   }
 }
 
-@media (max-width: 767px) {
-  .yellow-block {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
 .yellow-block a {
   max-width: 85%;
   display: block;
@@ -11791,13 +11790,22 @@ h2 {
   z-index: 10;
   position: relative;
 }
+@media (max-width: 767px) {
+  .yellow-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 
 .black a {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   z-index: 10;
   position: relative;
   background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .black {
