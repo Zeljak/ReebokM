@@ -58,8 +58,8 @@ a {
 }
 
 a:hover {
-  color: rgb(233, 78, 78);
-}
+	color: rgb(233, 78, 78);
+  }
 
 h2 {
   font-family: $family-secondary;
@@ -85,9 +85,7 @@ h2 {
   @media (max-width: 767px) {
     font-size: 32px;
     padding-left: 20px;
-    
   }
-
 }
 
 //NAV BAR
@@ -124,7 +122,7 @@ body > nav {
 }
 
 #menuToggle a:hover {
-  color: $dandelion;
+  color: $lipstick;
 }
 
 #menuToggle input {
@@ -220,13 +218,29 @@ body > nav {
     font-size: 33px;
     font-family: $family-secondary;
     margin: auto;
-    background-color: whitesmoke;
   }
 }
 
 .one-li {
   background: url(../_assets/images/Image_1.png);
-  background-color: whitesmoke;
+ position: relative;
+
+ &::after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 top: 50px;
+	 right: 50px;
+	 left: 50px;
+	 background-color: whitesmoke;
+	 box-shadow: 0 0 40px 0 grey inset;
+	 z-index: -1;
+
+ }
+
+ .text-wrapper {
+	 position: relative;
+ }
 }
 
 .two-li {
@@ -369,7 +383,6 @@ body > nav {
 .black {
   color: white;
   background-color: black;
-  
 }
 
 .yellow-container {
@@ -395,23 +408,21 @@ body > nav {
 }
 
 .button2 {
-
   @media only screen and (min-device-width: 768px) and (max-device-width: 2560px) {
-  height: 52px;
-  width: 20%;
-  display: block;
-  font-family: $family-primary;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 52px;
-  border-radius: 26px;
-  color: white;
-  background-color: $lipstick;
-  padding: 0;
-  text-transform: uppercase;
-  margin-left: 40%;
-
-}
+    height: 52px;
+    width: 20%;
+    display: block;
+    font-family: $family-primary;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 52px;
+    border-radius: 26px;
+    color: white;
+    background-color: $lipstick;
+    padding: 0;
+    text-transform: uppercase;
+    margin-left: 40%;
+  }
   @media (max-width: 767px) {
     height: 32px;
     width: 40%;
@@ -429,13 +440,19 @@ body > nav {
   }
 }
 
+.button2:hover {
+	color: $lipstick;
+	background-color: white;
+	box-shadow: 0 0 0 3px $lipstick inset;
+  }
+
 .back-holder {
-  background: url(../_assets/images/background-grid.png) no-repeat center / auto 100%;
+  background: url(../_assets/images/background-grid.png) no-repeat center / auto
+    100%;
 }
 .grid-wrapper {
   display: grid;
-  // grid-gap: 80px;
-  column-gap: 60px;
+  column-gap: 100px;
   row-gap: 20px;
   grid-template-columns: repeat(2, [col] 240px);
   grid-template-rows: repeat(4, [row] auto);
@@ -443,7 +460,7 @@ body > nav {
   font-size: 37px;
   font-weight: 700;
   padding-top: 60px;
-  max-width: 840px;
+  max-width: 582px;
   margin: 0 auto;
 
   .button {
@@ -463,13 +480,21 @@ body > nav {
   }
 }
 
-.a-foot, .b-foot {
+.button:hover {
+	color: $lipstick;
+	background-color: white;
+	box-shadow: 0 0 0 3px $lipstick inset;
+  }
+
+.a-foot,
+.b-foot {
   .button {
     margin-bottom: 204px;
   }
 }
 
-.c-foot, .d-foot {
+.c-foot,
+.d-foot {
   .button {
     margin-bottom: 68px;
   }
@@ -489,7 +514,7 @@ body > nav {
 }
 
 .b {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: row;
   background-color: whitesmoke;
   padding-left: 20px;
@@ -497,7 +522,7 @@ body > nav {
   padding-top: 30px;
 }
 .b-foot {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: row 2;
 }
 
@@ -515,7 +540,7 @@ body > nav {
 }
 
 .d {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: row 3;
   background-color: whitesmoke;
   padding-left: 20px;
@@ -523,7 +548,7 @@ body > nav {
   padding-top: 30px;
 }
 .d-foot {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: row 4;
 }
 
