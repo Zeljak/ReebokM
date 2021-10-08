@@ -11561,7 +11561,7 @@ body > nav {
 
 #menuToggle a {
   text-decoration: none;
-  color: #3f3f3f;
+  color: white;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -11636,6 +11636,7 @@ body > nav {
  * at the top left of the screen
  */
 #menu {
+  display: none;
   position: absolute;
   width: 100%;
   margin: -100px 0 0 -50px;
@@ -11655,12 +11656,14 @@ body > nav {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
+#menu li {
+  margin-bottom: 40px;
+}
 @media (max-width: 767px) {
   #menu li {
     padding: 20px 50px;
     font-size: 33px;
     font-family: "Anton", sans-serif;
-    margin: auto;
   }
 }
 @media (min-width: 768px) {
@@ -11668,28 +11671,21 @@ body > nav {
     padding-left: 260px;
     font-size: 33px;
     font-family: "Anton", sans-serif;
-    margin: auto;
   }
+}
+#menu li .text-wrapper {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4) inset;
+          box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4) inset;
+  color: #333433;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  padding-right: 100%;
+  padding-left: 25px;
 }
 
 .one-li {
   background: url(../_assets/images/Image_1.png);
-  position: relative;
-}
-.one-li::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  left: 50px;
-  background-color: whitesmoke;
-  -webkit-box-shadow: 0 0 40px 0 grey inset;
-          box-shadow: 0 0 40px 0 grey inset;
-  z-index: -1;
-}
-.one-li .text-wrapper {
-  position: relative;
 }
 
 .two-li {
@@ -11730,6 +11726,29 @@ body > nav {
     padding-left: 160px;
     padding-top: 20px;
   }
+}
+
+.button3 {
+  height: 32px;
+  width: 150px;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 35px;
+  border-radius: 26px;
+  color: white;
+  background-color: #c71737;
+  padding-left: 40px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+.button3:hover {
+  color: #c71737;
+  background-color: white;
+  -webkit-box-shadow: 0 0 0 3px #c71737 inset;
+          box-shadow: 0 0 0 3px #c71737 inset;
 }
 
 #menuToggle input:checked ~ ul#menu {

@@ -58,8 +58,8 @@ a {
 }
 
 a:hover {
-	color: rgb(233, 78, 78);
-  }
+  color: rgb(233, 78, 78);
+}
 
 h2 {
   font-family: $family-secondary;
@@ -116,7 +116,7 @@ body > nav {
 
 #menuToggle a {
   text-decoration: none;
-  color: $greyish-brown;
+  color: white;
 
   transition: color 0.3s ease;
 }
@@ -188,6 +188,7 @@ body > nav {
  * at the top left of the screen
  */
 #menu {
+  display: none;
   position: absolute;
   width: 100%;
   margin: -100px 0 0 -50px;
@@ -210,37 +211,29 @@ body > nav {
     padding: 20px 50px;
     font-size: 33px;
     font-family: $family-secondary;
-    margin: auto;
   }
 
   @media (min-width: 768px) {
     padding-left: 260px;
     font-size: 33px;
     font-family: $family-secondary;
-    margin: auto;
+  }
+
+  margin-bottom: 40px;
+
+  .text-wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4) inset;
+    color: $charcoal;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    padding-right: 100%;
+    padding-left: 25px;
   }
 }
 
 .one-li {
   background: url(../_assets/images/Image_1.png);
- position: relative;
-
- &::after {
-	 content: "";
-	 display: block;
-	 position: absolute;
-	 top: 50px;
-	 right: 50px;
-	 left: 50px;
-	 background-color: whitesmoke;
-	 box-shadow: 0 0 40px 0 grey inset;
-	 z-index: -1;
-
- }
-
- .text-wrapper {
-	 position: relative;
- }
 }
 
 .two-li {
@@ -279,6 +272,29 @@ body > nav {
     padding-left: 160px;
     padding-top: 20px;
   }
+}
+
+.button3 {
+    height: 32px;
+    width: 150px;
+    display: block;
+    font-family: $family-primary;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 35px;
+    border-radius: 26px;
+	color: white;
+    background-color: $lipstick;
+    padding-left: 40px;
+    text-transform: uppercase;
+    margin-top: 100px;
+  
+}
+
+.button3:hover {
+  color: $lipstick;
+  background-color: white;
+  box-shadow: 0 0 0 3px $lipstick inset;
 }
 
 #menuToggle input:checked ~ ul#menu {
@@ -441,10 +457,10 @@ body > nav {
 }
 
 .button2:hover {
-	color: $lipstick;
-	background-color: white;
-	box-shadow: 0 0 0 3px $lipstick inset;
-  }
+  color: $lipstick;
+  background-color: white;
+  box-shadow: 0 0 0 3px $lipstick inset;
+}
 
 .back-holder {
   background: url(../_assets/images/background-grid.png) no-repeat center / auto
@@ -481,10 +497,10 @@ body > nav {
 }
 
 .button:hover {
-	color: $lipstick;
-	background-color: white;
-	box-shadow: 0 0 0 3px $lipstick inset;
-  }
+  color: $lipstick;
+  background-color: white;
+  box-shadow: 0 0 0 3px $lipstick inset;
+}
 
 .a-foot,
 .b-foot {
