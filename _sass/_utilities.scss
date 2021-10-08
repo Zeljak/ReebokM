@@ -31,11 +31,17 @@ $sunshine-yellow: #ffff30;
 $dandelion: #fade0a;
 $greyish-brown: #3f3f3f;
 $charcoal: #333433;
+$lipstick: #c71737;
 
 
 //font-family
 $family-primary: 'Roboto', sans-serif;
 $family-secondary: 'Anton', sans-serif;
+
+@font-face {
+  font-family: "NeuePlak-CompBlack";
+  src: url("../_assets/fonts/NeuePlak-CompBlack.otf") format("opentype");
+}
 
 
 //font-size

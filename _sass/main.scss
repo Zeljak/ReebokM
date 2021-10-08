@@ -36,7 +36,7 @@ $primary-invert: $pink-invert;
 .body {
   max-width: 100vw;
   margin: 0;
-  font-family: $family-primary;
+  font-family: NeuePlak-CompBlack;
 }
 
 section {
@@ -58,7 +58,7 @@ a {
 }
 
 a:hover {
-  color: $sunshine-yellow;
+  color: rgb(233, 78, 78);
 }
 
 h2 {
@@ -85,14 +85,9 @@ h2 {
   @media (max-width: 767px) {
     font-size: 32px;
     padding-left: 20px;
-    padding-bottom: 30px;
+    
   }
 
-  @media (max-width: 767px) {
-    font-size: 32px;
-    padding-left: 20px;
-    padding-bottom: 30px;
-  }
 }
 
 //NAV BAR
@@ -225,7 +220,29 @@ body > nav {
     font-size: 33px;
     font-family: $family-secondary;
     margin: auto;
+    background-color: whitesmoke;
   }
+}
+
+.one-li {
+  background: url(../_assets/images/Image_1.png);
+  background-color: whitesmoke;
+}
+
+.two-li {
+  background-image: url(../_assets/images/Image_2.png);
+}
+
+.three-li {
+  background-image: url(../_assets/images/Image_3.png);
+}
+
+.four-li {
+  background-image: url(../_assets/images/Image_4.png);
+}
+
+.li-text {
+  color: white;
 }
 
 .button-menu {
@@ -278,7 +295,7 @@ body > nav {
 //TEXT BLOCK
 .text-block {
   margin-top: 0;
-  background-color: $sunshine-yellow;
+  background-color: rgb(247, 242, 242);
   max-width: 80%;
   margin: auto;
 
@@ -292,27 +309,31 @@ body > nav {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  font-family: $family-primary;
+  font-family: "NeuePlak-CompBlack";
 
   @media (max-width: 1800px) {
-    font-size: $is-size-2;
+    font-size: 50px;
+    line-height: 80px;
   }
 
   @media (min-width: 1200px) {
-    font-size: $is-size-2;
+    font-size: 50px;
+    line-height: 80px;
   }
 
   @media (max-width: 900px) {
-    font-size: $is-size-3;
+    font-size: 30px;
+    line-height: 50px;
   }
 
   @media (max-width: 767px) {
-    font-size: $is-size-3;
+    font-size: 30px;
     padding-top: 0;
   }
 
   @media (max-width: 767px) {
-    font-size: $is-size-4;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -354,7 +375,7 @@ body > nav {
 .yellow-container {
   margin: 0;
   padding: 0;
-  background-color: $dandelion;
+  background-color: $lipstick;
   max-width: 100%;
   height: 10px;
 }
@@ -373,20 +394,43 @@ body > nav {
   padding-bottom: 70px;
 }
 
-.play-button {
-  @media (max-width: 767px) {
-    width: 20px;
-    height: 20px;
-  }
+.button2 {
 
+  @media only screen and (min-device-width: 768px) and (max-device-width: 2560px) {
+  height: 52px;
+  width: 20%;
+  display: block;
+  font-family: $family-primary;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 52px;
+  border-radius: 26px;
+  color: white;
+  background-color: $lipstick;
+  padding: 0;
+  text-transform: uppercase;
+  margin-left: 40%;
+
+}
   @media (max-width: 767px) {
-    width: 20px;
-    height: 20px;
+    height: 32px;
+    width: 40%;
+    display: block;
+    font-family: $family-primary;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 35px;
+    border-radius: 26px;
+    color: white;
+    background-color: $lipstick;
+    padding: 0;
+    text-transform: uppercase;
+    margin-left: 30%;
   }
 }
 
 .back-holder {
-  background: url(../_assets/images/lead-with-your-legacy-reebok.png) no-repeat center / auto 100%;
+  background: url(../_assets/images/background-grid.png) no-repeat center / auto 100%;
 }
 .grid-wrapper {
   display: grid;
@@ -411,8 +455,8 @@ body > nav {
     font-weight: bold;
     line-height: 52px;
     border-radius: 26px;
-    color: $dandelion;
-    background-color: $charcoal;
+    color: white;
+    background-color: $lipstick;
     padding: 0;
     text-transform: uppercase;
     margin: 38px 0;
@@ -434,6 +478,10 @@ body > nav {
 .a {
   grid-column: 1 / span 1;
   grid-row: row;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 }
 .a-foot {
   grid-column: 1 / span 1;
@@ -443,6 +491,10 @@ body > nav {
 .b {
   grid-column: 3 / span 1;
   grid-row: row;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 }
 .b-foot {
   grid-column: 3 / span 1;
@@ -452,6 +504,10 @@ body > nav {
 .c {
   grid-column: 1 / span 1;
   grid-row: row 3;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 }
 .c-foot {
   grid-column: 1 / span 1;
@@ -461,6 +517,10 @@ body > nav {
 .d {
   grid-column: 3 / span 1;
   grid-row: row 3;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 }
 .d-foot {
   grid-column: 3 / span 1;

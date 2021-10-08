@@ -19,6 +19,10 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
+@font-face {
+  font-family: "NeuePlak-CompBlack";
+  src: url("../_assets/fonts/NeuePlak-CompBlack.otf") format("opentype");
+}
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .pagination-previous,
@@ -11473,7 +11477,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .body {
   max-width: 100vw;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: NeuePlak-CompBlack;
 }
 
 section {
@@ -11495,7 +11499,7 @@ a {
 }
 
 a:hover {
-  color: #ffff30;
+  color: #e94e4e;
 }
 
 h2 {
@@ -11526,14 +11530,6 @@ h2 {
   h2 {
     font-size: 32px;
     padding-left: 20px;
-    padding-bottom: 30px;
-  }
-}
-@media (max-width: 767px) {
-  h2 {
-    font-size: 32px;
-    padding-left: 20px;
-    padding-bottom: 30px;
   }
 }
 
@@ -11673,7 +11669,29 @@ body > nav {
     font-size: 33px;
     font-family: "Anton", sans-serif;
     margin: auto;
+    background-color: whitesmoke;
   }
+}
+
+.one-li {
+  background: url(../_assets/images/Image_1.png);
+  background-color: whitesmoke;
+}
+
+.two-li {
+  background-image: url(../_assets/images/Image_2.png);
+}
+
+.three-li {
+  background-image: url(../_assets/images/Image_3.png);
+}
+
+.four-li {
+  background-image: url(../_assets/images/Image_4.png);
+}
+
+.li-text {
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -11732,7 +11750,7 @@ body > nav {
 
 .text-block {
   margin-top: 0;
-  background-color: #ffff30;
+  background-color: #f7f2f2;
   max-width: 80%;
   margin: auto;
 }
@@ -11747,32 +11765,36 @@ body > nav {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "NeuePlak-CompBlack";
 }
 @media (max-width: 1800px) {
   .text-block__black {
-    font-size: 19px;
+    font-size: 50px;
+    line-height: 80px;
   }
 }
 @media (min-width: 1200px) {
   .text-block__black {
-    font-size: 19px;
+    font-size: 50px;
+    line-height: 80px;
   }
 }
 @media (max-width: 900px) {
   .text-block__black {
-    font-size: 16px;
+    font-size: 30px;
+    line-height: 50px;
   }
 }
 @media (max-width: 767px) {
   .text-block__black {
-    font-size: 16px;
+    font-size: 30px;
     padding-top: 0;
   }
 }
 @media (max-width: 767px) {
   .text-block__black {
-    font-size: 12px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -11816,7 +11838,7 @@ body > nav {
 .yellow-container {
   margin: 0;
   padding: 0;
-  background-color: #fade0a;
+  background-color: #c71737;
   max-width: 100%;
   height: 10px;
 }
@@ -11839,21 +11861,43 @@ body > nav {
   padding-bottom: 70px;
 }
 
-@media (max-width: 767px) {
-  .play-button {
-    width: 20px;
-    height: 20px;
+@media only screen and (min-device-width: 768px) and (max-device-width: 2560px) {
+  .button2 {
+    height: 52px;
+    width: 20%;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 52px;
+    border-radius: 26px;
+    color: white;
+    background-color: #c71737;
+    padding: 0;
+    text-transform: uppercase;
+    margin-left: 40%;
   }
 }
 @media (max-width: 767px) {
-  .play-button {
-    width: 20px;
-    height: 20px;
+  .button2 {
+    height: 32px;
+    width: 40%;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 35px;
+    border-radius: 26px;
+    color: white;
+    background-color: #c71737;
+    padding: 0;
+    text-transform: uppercase;
+    margin-left: 30%;
   }
 }
 
 .back-holder {
-  background: url(../_assets/images/lead-with-your-legacy-reebok.png) no-repeat center/auto 100%;
+  background: url(../_assets/images/background-grid.png) no-repeat center/auto 100%;
 }
 
 .grid-wrapper {
@@ -11923,8 +11967,8 @@ body > nav {
   font-weight: bold;
   line-height: 52px;
   border-radius: 26px;
-  color: #fade0a;
-  background-color: #333433;
+  color: white;
+  background-color: #c71737;
   padding: 0;
   text-transform: uppercase;
   margin: 38px 0;
@@ -11943,6 +11987,10 @@ body > nav {
   -ms-grid-column-span: 1;
   grid-column: 1/span 1;
   grid-row: row;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 }
 
 .a-foot {
@@ -11957,6 +12005,10 @@ body > nav {
   -ms-grid-column-span: 1;
   grid-column: 3/span 1;
   grid-row: row;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 }
 
 .b-foot {
@@ -11971,6 +12023,10 @@ body > nav {
   -ms-grid-column-span: 1;
   grid-column: 1/span 1;
   grid-row: row 3;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 }
 
 .c-foot {
@@ -11985,6 +12041,10 @@ body > nav {
   -ms-grid-column-span: 1;
   grid-column: 3/span 1;
   grid-row: row 3;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 }
 
 .d-foot {
